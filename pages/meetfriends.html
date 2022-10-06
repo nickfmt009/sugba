@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/pages/script.js"></script>
+</head>
+<style>
+  
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+    nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: snow;
+    text-shadow: 1px 1px 1px #000;
+    box-shadow: 0px 5px 10px rgba(17,15,15,0.1);
+}
+.love{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: bold;
+    padding:10px;
+}
+li{
+    display: inline-block;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.sign-up,.login{
+    margin-right: 10px;
+    background-color: skyblue;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+.imagess{
+    height: 30px;
+}
+.women{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: powderblue;
+    margin-bottom: 50px; 
+
+}
+
+    .smart {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.smart > div {
+  
+  width: 130px;
+font-weight: bold;
+  text-align: center;
+  line-height: 85px;
+  font-size: 30px;
+}
+.mage{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.svg{
+    background-color: blue;
+    font-weight: bold;
+    
+}
+.lov{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.log{
+    height: 50px;
+   position: relative;
+   top: 0px;
+   bottom: 3px;
+   right: 4px;
+   cursor: pointer;
+}
+.mage{
+   
+   transition: transform 250ms;
+ }
+ .mage:hover {
+   transform: translateY(-30px);
+   }
+.showSlide {  
+            display: none  
+        }  
+            .showSlide img {  
+                width: 100%;  
+            }  
+        .slidercontainer {  
+            max-width: 1000px;  
+            position: relative;  
+            margin: auto;  
+        }  
+        .left, .right {  
+            cursor: pointer;  
+            position: absolute;  
+            top: 50%;  
+            width: auto;  
+            padding: 16px;  
+            margin-top: -22px;  
+            color: white;  
+            font-weight: bold;  
+            font-size: 18px;  
+            transition: 0.6s ease;  
+            border-radius: 0 3px 3px 0;  
+        }  
+        .right {  
+            right: 0;  
+            border-radius: 3px 0 0 3px;  
+        }  
+            .left:hover, .right:hover {  
+                background-color: rgba(115, 115, 115, 0.8);  
+            }  
+        .content {  
+            color: #eff5d4;  
+            font-size: 30px;  
+            padding: 8px 12px;  
+            position: absolute;  
+            top: 10px;  
+            width: 70%;  
+            text-align: center;  
+        }  
+        .active {  
+            background-color: #717171;  
+        }  
+        /* Fading animation */  
+        .fade {  
+            -webkit-animation-name: fade;  
+            -webkit-animation-duration: 1.5s;  
+            animation-name: fade;  
+            animation-duration: 1.5s;  
+        }  
+        @-webkit-keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+  
+        @keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+        .motion{
+          font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-size: 55px;
+          background-color: skyblue;
+          color: red;
+          font-weight: bolder;
+          padding: 20px;
+          margin-bottom: 24px;
+          text-align: center;
+          
+        }
+
+        .eye-off {
+                     animation: eye-off 2s infinite cubic-bezier(0.99, -0.1, 0.01, 1.02) alternate;  
+                    stroke-dashoffset: 100;
+                    stroke-dasharray: 100;
+                  }
+              
+                  @keyframes eye-off {
+                    to {
+                      stroke-dashoffset: 0;
+                    }
+                  }
+
+.single{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+   .sin{
+    height: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+   }
+   .name{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    justify-content: space-around;
+    
+   
+   }
+
+   
+.footer-distributed{
+	background: rgb(129, 241, 64);
+	box-shadow: 0 1px 1px 0 rgba(32, 25, 25, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: rgb(221, 216, 216);
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #e3e3e4;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+
+.scroller{
+    max-width: 390px;
+    padding: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1rem;
+    overflow-x: auto;
+}
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+.scroller-item{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 50%;
+}
+.scroller-item img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.scroller-item::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background-image:linear-gradient(45deg, #f09433 0% , #e6683c 25%,
+    #dc2743 50% , #6902be 75% , #bc1888 100%
+    );
+    border-radius: inherit;
+    z-index: -1;
+}
+@media only screen and (max-width: 600px) {
+  
+  
+  nav{
+      display: grid;
+      place-items: center;
+      box-shadow: 0px 5px 10px rgba(17, 15, 15, 0.1);
+  }
+  li{
+      display: flex;
+      font-size: 20px;
+      align-items:flex-start;
+      align-self: flex-start;
+  }
+
+   .women{
+    display: grid;
+    place-items: center;
+   }
+   .single{
+    display: grid;
+    place-items: center;
+   }
+}
+</style>
+
+<body>
+    <nav>
+        <span class="love">
+            Love-meet<img src="https://img.icons8.com/color/48/000000/filled-like.png" class="imagess"/>
+
+        </span>
+        <ul>
+            
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Dashboard</a></li>
+           <li><a href="#">Mingle</a></li>
+           <li><a href="#">About</a></li>
+        </ul>
+
+    <span class="first">
+       
+            <a href="#" class="sign-up">Sign-up</a>
+            <a href="#" class="login">Login</a>
+    </span>
+    </nav>
+    <div class="scroller">
+        <div class="scroller-item">
+            <img src="./image/menn1.avif">
+        </div>
+        <div class="scroller-item">
+            <img src="./image/lad.avif">
+        </div>
+        <div class="scroller-item">
+            <img src="./image/laddy4.avif">
+        </div>
+        <div class="scroller-item">
+            <img src="./image/gile.avif">
+        </div>
+        <div class="scroller-item">
+            <img src="./image/kkkkkkkk.webp">
+        </div>
+        <div class="scroller-item">
+            <img src="./image/soon.webp">
+        </div>
+        <div class="scroller-item">
+            <img src="./image/couples1.avif">
+        </div>
+        <div class="scroller-item">
+            <img src="./image/laddy2.avif">
+        </div>
+    </div>
+    <main>
+        <span class="women">
+            <div class="smart">
+                <div class="one">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none"><style>@keyframes n-off{to{stroke-dashoffset:0}}</style><path stroke="#0A0A30" stroke-width="1.5" d="M12 3.398a5 5 0 00-5 5v2c0 .758-.442 1.505-1.005 2.012A3 3 0 008 17.642h8a3 3 0 002.005-5.232C17.442 11.903 17 11.156 17 10.398v-2a5 5 0 00-5-5z"/><path stroke="#0A0A30" stroke-linecap="round" stroke-width="1.5" d="M14.39 20.312l-.043.01a9.714 9.714 0 01-4.67-.01"/><path stroke="#265BFF" stroke-linecap="round" stroke-width="1.5" d="M19 5L5 19" style="animation:n-off 2s infinite cubic-bezier(.99,-.1,.01,1.02) alternate" stroke-dashoffset="100" stroke-dasharray="100"/></svg>
+             <div>Dashboard </div>
+            </div>
+             <div class="one">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none"><style>@keyframes open{0%{transform:translateX(10px) scale(0);transform-origin:50% 100%}to{transform:scale(1);transform-origin:50% 100%}}</style><rect width="12" height="10" x="6" y="8.804" stroke="#0A0A30" stroke-width="1.5" rx="2"/><path fill="#fff" stroke="#265BFF" stroke-width="1.5" d="M9 6.196a1 1 0 011-1h4a1 1 0 011 1v5.082a1 1 0 01-.37.777l-2.006 1.628a1 1 0 01-1.263-.002l-1.993-1.626A1 1 0 019 11.28V6.196z" style="animation:open 2s cubic-bezier(.49,.39,.35,1.06) both infinite"/><path stroke="#0A0A30" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.465 11.413l3.573 2.783 3.497-2.783"/></svg>
+            <div> messages10</div>
+        </div>
+        <div class="one">
+            <svg  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none"><style>@keyframes chatMotion3{0%,to{transform:translateY(0)}50%{transform:translateY(-1px)}}</style><path fill="#0A0A30" fill-rule="evenodd" d="M12.121 6.74a5.25 5.25 0 00-4.414 8.093l.177.274-1.057 1.986 2.244-.82.256.162A5.25 5.25 0 1012.12 6.74zm-6.75 5.25a6.75 6.75 0 113.422 5.874l-2.52.876a.95.95 0 01-1.115-1.162l1.115-2.216a6.722 6.722 0 01-.902-3.372z" clip-rule="evenodd"/><circle cx="9" cy="12" r="1" fill="#265BFF" style="animation:chatMotion3 .8s ease-in-out infinite"/><circle cx="12" cy="12" r="1" fill="#265BFF" style="animation:chatMotion3 .8s ease-in-out infinite;animation-delay:.3s"/><circle cx="15" cy="12" r="1" fill="#265BFF" style="animation:chatMotion3 .8s ease-in-out infinite;animation-delay:.5s"/></svg>
+            <div>online</div>
+        </div>
+        <div class="one">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none"><style>@keyframes pulsate{0%,to{transform:scale(1)}50%{transform:scale(.9)}}</style><g style="animation:pulsate .5s ease-in-out infinite both;transform-origin:center center" stroke-width="1.5"><path stroke="#0A0A30" d="M11.515 6.269l.134.132a.5.5 0 00.702 0l.133-.132A4.44 4.44 0 0115.599 5c.578 0 1.15.112 1.684.33a4.41 4.41 0 011.429.939c.408.402.733.88.954 1.406a4.274 4.274 0 010 3.316 4.331 4.331 0 01-.954 1.405l-6.36 6.259a.5.5 0 01-.702 0l-6.36-6.259A4.298 4.298 0 014 9.333c0-1.15.464-2.252 1.29-3.064A4.439 4.439 0 018.401 5c1.168 0 2.288.456 3.114 1.269z"/><path stroke="#265BFF" stroke-linecap="round" stroke-linejoin="round" d="M15.5 7.5c.802.304 1.862 1.43 2 2"/></g></svg>
+            <div>friends</div>
+        </div>
+        <div class="one">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none" viewBox="0 0 24 24">
+              
+                <path stroke="#0A0A30" stroke-width="1.5" d="M19.195 11.31c.325.41.325.97 0 1.38-1.114 1.4-3.916 4.45-7.195 4.45-3.28 0-6.08-3.05-7.195-4.45a1.097 1.097 0 010-1.38C5.92 9.91 8.721 6.86 12 6.86c3.28 0 6.08 3.05 7.195 4.45z"/>
+                <circle cx="12" cy="12" r="1.972" stroke="#0A0A30" stroke-width="1.5"/>
+                <path class="eye-off" stroke="#265BFF" stroke-linecap="round" stroke-width="1.5" d="M18.514 5.487L5.487 18.514"/>
+            </svg>
+                  <div>Unblock</div>   
+</div>
+                <div class="one">    
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="34" height="35" fill="none"><style>@keyframes mobile-vibration{0%,to{transform:translateX(0)}10%,30%,50%,70%{transform:translateX(-1px)}20%,40%,60%,80%{transform:translateX(2px)}90%{transform:translateX(-2px)}}</style><g style="animation:mobile-vibration 1.5s linear infinite both"><path fill="#0A0A30" fill-rule="evenodd" d="M11.55 4.097c-1.275-.341-2.6.469-2.96 1.81L5.75 16.505c-.359 1.341.384 2.705 1.66 3.047l5.04 1.35c1.275.342 2.6-.468 2.96-1.81l2.84-10.597c.359-1.341-.384-2.705-1.66-3.047l-5.04-1.35zm-1.7 2.148c.164-.61.766-.978 1.346-.823l.31.083c-.03.07-.055.142-.075.217-.216.804.23 1.623.995 1.828l1.68.45c.765.205 1.56-.28 1.776-1.086.02-.075.035-.15.044-.225l.31.083c.58.156.917.776.753 1.386l-2.84 10.597c-.162.61-.765.978-1.345.823l-5.04-1.35c-.58-.156-.917-.776-.754-1.386L9.85 6.245zm2.82-.428l2.091.56c.04.071.053.158.03.245a.313.313 0 01-.377.23l-1.68-.45a.312.312 0 01-.211-.388.328.328 0 01.147-.197z" clip-rule="evenodd"/><path stroke="#265BFF" stroke-linecap="round" stroke-width="1.5" d="M6.312 8.905L5.277 12.77m13.446-.539l-1.035 3.864"/></g></svg>      
+          <div>Blocked</div>
+        </div> 
+            </div>  
+            <div class="dating">
+                <a href="./messages.html"><img src="./image/save.webp" class="mage" alt="images"></a>
+            <div class="name">
+                <div class="">
+                    Clara
+                </div>
+                <div class="">
+                    Age:23
+                </div>
+                
+            </div>
+            <div class="lov">
+            <img src="https://img.icons8.com/fluency/48/000000/envelope-love-1.png" class="log"/>
+            <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-friends-relationship-flaticons-flat-flat-icons-2.png" class="log"/>
+            <img src="https://img.icons8.com/color-glass/48/000000/favorite-cart.png" class="log"/>
+        </div>
+            <img src="./image/ladyy.avif" class="mage" alt="images">
+            <div class="name">
+                <div class="">
+                    Sonia
+                </div>
+                <div class="">
+                    Age:27
+                </div>
+                
+            </div>
+            <div class="lov">
+                <img src="https://img.icons8.com/fluency/48/000000/envelope-love-1.png" class="log"/>
+                <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-friends-relationship-flaticons-flat-flat-icons-2.png" class="log"/>
+                <img src="https://img.icons8.com/color-glass/48/000000/favorite-cart.png" class="log"/>
+            </div>
+            </div>
+            <div class="dating">
+                <img src="./image/kkkkkkkk.webp" class="mage" alt="images">
+                <div class="name">
+                    <div class="">
+                        Greg
+                    </div>
+                    <div class="">
+                        Age:25
+                    </div>
+                    
+                </div>
+                <div class="lov">
+                    <img src="https://img.icons8.com/fluency/48/000000/envelope-love-1.png" class="log"/>
+                    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-friends-relationship-flaticons-flat-flat-icons-2.png" class="log"/>
+                    <img src="https://img.icons8.com/color-glass/48/000000/favorite-cart.png" class="log"/>
+                </div>
+                <img src="./image/menn.avif" class="mage" alt="images">
+                <div class="name">
+                    <div class="">
+                        Jane
+                    </div>
+                    <div class="">
+                        Age:23
+                    </div>
+                    
+                </div>
+                <div class="lov">
+                    <img src="https://img.icons8.com/fluency/48/000000/envelope-love-1.png" class="log"/>
+                    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-friends-relationship-flaticons-flat-flat-icons-2.png" class="log"/>
+                    <img src="https://img.icons8.com/color-glass/48/000000/favorite-cart.png" class="log"/>
+                </div>
+            </div>
+            <div class="dating">
+                <img src="./image/menn2.avif" class="mage" alt="images">
+                <div class="name">
+                    <div class="">
+                        john
+                    </div>
+                    <div class="">
+                        Age:29
+                    </div>
+                    
+                </div>
+                <div class="lov">
+                    <img src="https://img.icons8.com/fluency/48/000000/envelope-love-1.png" class="log"/>
+                    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-friends-relationship-flaticons-flat-flat-icons-2.png" class="log"/>
+                    <img src="https://img.icons8.com/color-glass/48/000000/favorite-cart.png" class="log"/>
+                </div>
+                <img src="./image/menn1.avif" class="mage" alt="images">
+                <div class="name">
+                    <div class="">
+                        Sam
+                    </div>
+                    <div class="">
+                        Age:40
+                    </div>
+                    
+                </div>
+                <div class="lov">
+                    <img src="https://img.icons8.com/fluency/48/000000/envelope-love-1.png" class="log"/>
+                    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-friends-relationship-flaticons-flat-flat-icons-2.png" class="log"/>
+                    <img src="https://img.icons8.com/color-glass/48/000000/favorite-cart.png" class="log"/>
+                </div>
+            </div>
+        <!-- </div> -->
+        </span>
+    </main>
+  
+    <div class="motion">
+        MEET MORE SINGLE LADIES HERE
+      </div>
+      <!-- sliding container -->
+      <div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img src="./image/single.jpg" />  
+            <div class="content">WE GOT YOU COVERED</div>  
+        </div>  
+        <div class="showSlide fade">  
+          <img src="./image/couples1.avif" />  
+            <div class="content">MEET-LOVE.COM</div>  
+        </div>  
+      
+        <div class="showSlide fade">  
+          <img src="./image/laddy4.avif" /> 
+            <div class="content">HAVE FUN HERE</div>  
+        </div>  
+        <div class="showSlide fade">  
+          <img src="./image/couples.avif" /> 
+            <div class="content">MEET SINGLES HERE</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="./image/menn2.avif" /> 
+              <div class="content">LOVE HERE</div>  
+          </div>  
+          <div class="showSlide fade">  
+            <img src="./image/lad.avif" /> 
+              <div class="content">NO GAY</div>  
+          </div>  
+        <!-- Navigation arrows -->  
+        <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+      </div>  
+      
+        
+      <script type="text/javascript">  
+        var slide_index = 1;  
+        displaySlides(slide_index);  
+      
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }  
+      
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }  
+      
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }  
+      </script> 
+      <div class="single">
+        <div class="sin">
+        <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-single-dating-app-flaticons-lineal-color-flat-icons-2.png" class="sin"/>
+         single
+    </div>
+    <div class="sin">
+        <img src="https://img.icons8.com/emoji/48/000000/rose-emoji.png" class="sin"/>
+promo here
+    </div>
+        <div class="sin">
+        <img src="https://img.icons8.com/officel/80/000000/meeting.png" class="sin"/>
+        Married here
+    </div>
+        <div class="sin">
+        <img src="https://img.icons8.com/fluency/48/000000/envelope-love-1.png" class="sin"/>
+        over 10 messages
+    </div>
+        <div class="sin">
+        <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-woman-avatars-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-3.png" class="sin"/>
+     meet women
+    </div>
+    </div>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>LOVE<span>MEET</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                ·
+                <a href="#">Blog</a>
+                ·
+                <a href="#">Pricing</a>
+                ·
+                <a href="#">About</a>
+                ·
+                <a href="#">Faq</a>
+                ·
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Company Name © 2015</p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p>Contact Us</p>
+
+            <form action="#" method="post">
+
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+
+            </form>
+
+        </div>
+
+    </footer>
+</html>
